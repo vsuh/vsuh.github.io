@@ -9,13 +9,13 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 ######################################################
-title: Моя записная книжка
-email: vsuh@mail.ru
-description: 
-baseurl: "" 
-url: ""
-twitter_username: 
-github_username:  vsuh
+#title: Моя записная книжка
+#email: vsuh@mail.ru
+#description: 
+#baseurl: "" 
+#url: ""
+#twitter_username: 
+#github_username:  vsuh
 
 #theme: minima
-theme: jekyll-theme-architect
+theme: jekyll-theme-leap-day
