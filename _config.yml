@@ -19,5 +19,6 @@ safe: true
 
 #theme: minima
 #theme: jekyll-theme-leap-day
-theme: jekyll-theme-midnight
+remote_theme: pawamoy/jekyll-readthedocs
+#theme: jekyll-theme-midnight
 
