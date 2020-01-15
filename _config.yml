@@ -20,5 +20,5 @@ github_username:  vsuh
 #theme: minima
 # ---Не работает! remote_theme: jekyll-theme-leap-day
 # Работатет!:  remote_theme: pawamoy/jekyll-readthedocs
-remote_theme: jekyll-theme-midnight
+theme: jekyll-theme-midnight
 
