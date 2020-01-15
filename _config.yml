@@ -17,4 +17,5 @@ url: ""
 twitter_username: 
 github_username:  vsuh
 
-theme: minima
+#theme: minima
+theme: jekyll-theme-architect
