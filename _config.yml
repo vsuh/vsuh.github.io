@@ -18,4 +18,6 @@ safe: true
 #github_username:  vsuh
 
 #theme: minima
-theme: jekyll-theme-leap-day
+#theme: jekyll-theme-leap-day
+theme: jekyll-theme-midnight
+
