@@ -18,7 +18,7 @@ twitter_username:
 github_username:  vsuh
 
 #theme: minima
-remote_theme: jekyll-theme-leap-day
+# ---Не работает! remote_theme: jekyll-theme-leap-day
 # Работатет!:  remote_theme: pawamoy/jekyll-readthedocs
-#theme: jekyll-theme-midnight
+remote_theme: jekyll-theme-midnight
 
