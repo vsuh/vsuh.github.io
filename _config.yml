@@ -17,5 +17,5 @@ safe: true
 #twitter_username: 
 #github_username:  vsuh
 
-#theme: minima
-theme: jekyll-theme-leap-day
+theme: minima
+#theme: jekyll-theme-leap-day
