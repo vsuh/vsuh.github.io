@@ -8,3 +8,13 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+######################################################
+title: Моя записная книжка
+email: cyx@bk.ru
+description: 
+baseurl: "" 
+url: ""
+twitter_username: 
+github_username:  vsuh
+
+theme: minima
