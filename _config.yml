@@ -18,10 +18,6 @@ twitter_username:
 github_username:  vsuh
 show_downloads: false
 
-#theme: minima
-# не отображаются посты theme: jekyll-theme-leap-day
-# нет категорий, папок, тэгов remote_theme: pawamoy/jekyll-readthedocs 
-theme: jekyll-theme-midnight
-# ?? не выводятя посты theme: jekyll-theme-minimal
+theme: minima
 
 

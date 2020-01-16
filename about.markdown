@@ -1,4 +1,4 @@
----
+п»ї---
 layout: default
 title: About
 permalink: /about/
@@ -17,4 +17,4 @@ You can find the source code for Jekyll at GitHub:
 
 [jekyll-organization]: https://github.com/jekyll
 
-<a href='/'>Вернуться к списку постов</a>
+<a href='/'>Р’РµСЂРЅСѓС‚СЊСЃСЏ Рє СЃРїРёСЃРєСѓ РїРѕСЃС‚РѕРІ</a>
