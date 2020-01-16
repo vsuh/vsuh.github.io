@@ -20,8 +20,8 @@ show_downloads: false
 
 #theme: minima
 # ---Не работает! remote_theme: jekyll-theme-leap-day
-# Работатет!:  remote_theme: pawamoy/jekyll-readthedocs
+remote_theme: pawamoy/jekyll-readthedocs
 # -- DO NOT theme: jekyll-theme-midnight
-theme: jekyll-theme-minimal
+# ?? не выводятя посты theme: jekyll-theme-minimal
 
 
