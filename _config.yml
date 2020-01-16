@@ -19,9 +19,9 @@ github_username:  vsuh
 show_downloads: false
 
 #theme: minima
-theme: jekyll-theme-leap-day
+# не отображаются посты theme: jekyll-theme-leap-day
 # нет категорий, папок, тэгов remote_theme: pawamoy/jekyll-readthedocs 
-# -- DO NOT theme: jekyll-theme-midnight
+theme: jekyll-theme-midnight
 # ?? не выводятя посты theme: jekyll-theme-minimal
 
 
