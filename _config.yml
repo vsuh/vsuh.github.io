@@ -35,12 +35,10 @@ urls:
       url: /about/
     - text: My Projects
       url: /projects/
-    - text: XML Feed
-      url: /feed.xml
 
 url: "https://vsuh.github.io"
 baseurl: ""
-paginate: 10
+paginate: 15
 per_page: 15
 paginate_path: "/page/:num/"
 markdown: kramdown
