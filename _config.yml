@@ -2,7 +2,7 @@ title: Note-bag
 description: все обо всем
 author: Валерий Сухих
 github: https://github.com/vsuh
-about: "here's the text about me"
+about: "быстрее! выше! сильнее! это не про меня.."
 #disqus_shortname:
 #google_analytics: 
 
@@ -44,7 +44,7 @@ paginate: 10
 per_page: 10
 paginate_path: "/page/:num/"
 markdown: kramdown
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
 
