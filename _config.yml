@@ -5,7 +5,9 @@ github: https://github.com/vsuh
 about: "быстрее! выше! сильнее! это не про меня.."
 #disqus_shortname:
 #google_analytics: 
-
+url: "http://helor:3000"
+host: "192.168.1.2"
+port: 3000
 enableTags: true
 tagarray: [ diy, 1C, python, js, phones, life ]
 
@@ -31,10 +33,13 @@ share:
 #  fb_appid:
 
 urls:
-    - text: About Me
-      url: /about/
-    - text: My Projects
-      url: /projects/
+#    - text: About Me
+#      url: /about/
+    - text: Телефоны
+      url: docs/phones/
+    - text: Мир 1С
+      url: docs/world1c/
+enableTags: true
 
 url: "https://vsuh.github.io"
 baseurl: ""
