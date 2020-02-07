@@ -15,7 +15,6 @@ layout: compress
     <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
     <meta content="{{ site.share.fb_appid }}" property="fb:app_id">
     <meta content="{{ site.title }}" property="og:site_name">
-
     {% if page.noindex %}
       <meta name="robots" content="noindex">
     {% endif %}
@@ -83,32 +82,19 @@ layout: compress
       <meta name="twitter:image:src" content="{{ site.url }}/{{ page.header-img }}">
     {% endif %}
 
-    <!-- Font awesome icons -->
-    <link href="/static/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <!-- syntax highlighting CSS -->
-    <link rel="stylesheet" href="/static/css/syntax.css">
-    <!-- Bootstrap core CSS -->
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300italic,300,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
     <!-- Custom CSS -->
+<!--
     <link rel="stylesheet" href="/static/css/super-search.css">
     <link rel="stylesheet" href="/static/css/thickbox.css">
     <link rel="stylesheet" href="/static/css/projects.css">
     <link rel="stylesheet" href="/static/css/main.css">
-
-    {% if jekyll.environment == "production" %}
-      <!-- Google Analytics -->
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
+-->
   </head>
   <body>
     <div class="container">
@@ -136,26 +122,37 @@ layout: compress
             <strong>Оглавление</strong>
             <li><a href="/">Home</a></li>
             {% for i in site.urls %}
-              <li><a class="about" href="{{ i.url }}">{{ i.text }}</a></li>
+              <li class="nav-item"><a class="about" href="{{ i.url }}">{{ i.text }}</a></li>
+            {% endfor %}
+            {% assign chaps = site.books | where: 'root', true %}
+            {% for bk in chaps %}
+              <li class="nav-item" title="{{ bk.description }}">
+		<a class="about" href="{{ bk.url }}">{{ bk.title }}</a></li>
             {% endfor %}
           </ul>
         </div>
         <!-- end /.fixed-condition -->
       </div>
       <div class="col-sm-8 col-offset-1 main-layout">
+	{% if page.url != "/" %}
+	    <header class="author-name">
+	        <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>
+    	    </heder>
+	{% endif %}
+
         {{ content }}
         <footer>
           &copy; {{ site.author }}
           {% if site.github %}
-            - <a href="{{ site.github }}">{{ site.github }}</a> - Powered by <a href="https://jekyllrb.com/docs/">Jekyll</a>.
+            &mdash;&nbsp; <a href="{{ site.github }}">{{ site.github }}</a> 
+	    &mdash;&nbsp; Powered by <a href="https://jekyllrb.com/docs/">Jekyll</a>.
           {% endif %}
-            - <a href="/feed.xml">RSS</a>
-    <!--
-          <div class="btn-github" style="float:right;">
-            <iframe src="https://ghbtns.com/github-btn.html?user=vsuh&repo=vsuh.github.io&type=star&count=true" frameborder="0" scrolling="0" width="100" height="20px"></iframe>
-            <iframe src="https://ghbtns.com/github-btn.html?user=vsuh&repo=vsuh.github.io&type=fork&count=true" frameborder="0" scrolling="0" width="100" height="20px"></iframe>
-          </div>
-    -->
+        &mdash;&nbsp; <a href="/feed.xml">RSS feed</a>
+	&mdash;&nbsp; url</b>: &nbsp;&quot;{{ page.url }}&quot;
+	&mdash;&nbsp; layout: &nbsp;&quot;{{ page.layout }}&quot;
+	{% if jekyll.environment != "production" %}
+	&mdash;&nbsp; dev mode &#10061;
+        {% endif %}
         </footer>
       </div>
       <!-- end /.col-sm-8 -->

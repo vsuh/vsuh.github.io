@@ -1,6 +1,8 @@
 ---
-layout: default
+layout: post
 title: Телефоны
+vrr: Variable value 100
 ---
 
-hi
+hi, {{ page.vrr }}
+<hr>

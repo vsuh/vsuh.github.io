@@ -1,0 +1,22 @@
+
+    <footer class="footer-distributed">
+      <div class="container">
+        <div class="footer">
+        <footer>
+[ &nbsp;
+         {{ site.author }} &copy; 2020
+        {% if site.github == "" %}
+            &mdash;&nbsp; <a href="{{ site.github }}">{{ site.github }}</a> 
+        {% endif %}
+	&mdash;&nbsp; Powered by <a href="https://jekyllrb.com/docs/">Jekyll</a>
+	{% if jekyll.environment != "production" %}
+	&mdash;&nbsp; url</b>: &nbsp;&quot;{{ page.url | baseurl }}&quot;
+	&mdash;&nbsp; layout: &nbsp;&quot;{{ page.layout }}&quot;
+	&mdash;&nbsp; dev mode &#10061;
+        {% endif %}
+        &mdash;&nbsp; <a href="/feed.xml">RSS feed</a>
+&nbsp; ]
+        </footer>
+        </div>
+      </div>
+    </footer>

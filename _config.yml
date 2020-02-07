@@ -10,36 +10,35 @@ host: "192.168.1.2"
 port: 3000
 enableTags: true
 tagarray: [ diy, 1C, python, js, phones, life ]
+tags: [ diy, 1C, python, js, phones, life ]
 
-collections:
-  project:
-    output: true
-    permalink: /project/:path/
+
+
 
 social:
-#    - icon: fa-facebook
-#      link: "#"
-#    - icon: fa-twitter
-#      link: "#"
-#    - icon: fa-linkedin
-#      link: "#"
-#    - icon: fa-stack-exchange
-#      link: "#"
-#    - icon: fa-github
-#      link: "https://github.com/vsuh"
+#  github: vsuh
+#  stackoverfow: 
+#  linkedin: 
+#  instagram: 
+#  rss: feed.xml
+
 
 share:
 #  twitter_username:
 #  fb_appid:
 
-urls:
+#urls:
 #    - text: About Me
 #      url: /about/
-    - text: Телефоны
-      url: docs/phones/
-    - text: Мир 1С
-      url: docs/world1c/
-enableTags: true
+#    - text: Телефоны
+#      url: /docs/phones/
+#    - text: Мир 1С
+#      url: /docs/world1c/
+#    - text: Jekyll
+#      url: /docs/jekyll/
+
+
+
 
 url: "https://vsuh.github.io"
 baseurl: ""
@@ -57,3 +56,26 @@ compress_html:
   endings: all
   ignore:
     envs: ['development']
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+  books:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "books"
+    values:
+      layout: "book"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "home"
