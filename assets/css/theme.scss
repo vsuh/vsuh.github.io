@@ -86,7 +86,9 @@ blockquote {
 a {
   color: $accent-color;
 }
-
+a.nocolor  {
+  color:inherit;
+}
 //********************************************************
 //                    Social Links
 //********************************************************
@@ -188,10 +190,10 @@ h2.post-title {
   text-align: left;
 }
 div.post-meta {
-  border-width: 1px 0;
+  border-width: 1px 0 0 0;
   border-color: #666666;
   border-style: solid;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   ul {
     display: inline;
     padding-left: 0;
@@ -213,6 +215,17 @@ div.post-meta {
   position: relative;
   margin-top: 32px;
   text-align: center;
+}
+
+.note-num-words {
+  display: table;
+  position: relative;
+  width: 100%;
+  bottom: -18px;
+  text-align: right;
+  color: #666;
+  font-size: 75%;
+  font-style: italic;
 }
 
 //********************************************************
@@ -407,6 +420,21 @@ table.inner-borders {
   background: #202020;
 }
 
+.PageNavigation {
+  display:flex;
+  width:100%;
+  max-width:100%;
+}
+
+#nav-link-prv, #nav-link-nxt {
+  width: 100%;
+  text-align:left;
+  font-size:80%;
+}
+
+#nav-link-nxt {
+  text-align:right;
+}
 
 //********************************************************
 //       Custom classes to apply to block elements,

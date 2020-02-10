@@ -1,6 +1,6 @@
 ---
 book: jekyll
-title: О Jekyll с любовью
+title: О Jekyll
 root: true
 description: О Jekyll с любовью
 ---
