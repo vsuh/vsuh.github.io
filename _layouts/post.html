@@ -12,6 +12,7 @@
                       <i class="fa fa-calendar-alt"></i>
                       <time>{{ page.date | date_to_string }}</time>
                     </div>
+
                     <ul>
                       {% for tag in page.tags %}
                         <li><a href="{{ '/tag/' | append: tag | relative_url }}">{{ tag }}</a></li>
@@ -20,7 +21,7 @@
                   </div>
                   <div class="post-content">
                     {% if page.toc %}
-                      {% include toc.html html=content class='toc' %}
+                     <h3 class='toc-title'>Содержание:</h3>{% include toc.html html=content class='toc' %}
                     {% endif %}
                     {{ content }}
 		    <div class="note-num-words">в тексте {{ page.content | number_of_words }} слов</div>
