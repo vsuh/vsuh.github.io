@@ -1,10 +1,11 @@
 ---
 layout: page
+title: index
 ---
 
 {% assign sitebooks = site.books | sort: "date" %}
 {% for book in sitebooks %}
-<div><a href="{{ book.url }}">{{ book.title }}</a></div>
+<div class="root-page-link-item"><a href="{{ book.url }}">{{ book.title }}</a></div>
 {% endfor %}
 
 <div class="post-footer">

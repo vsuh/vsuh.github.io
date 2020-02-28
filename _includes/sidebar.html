@@ -1,4 +1,8 @@
 <div class="sidebar ">
+
+{% if page.url == '/' %}
+</div>
+{% else %}
   <h1>{{ site.title }}</h1>
   <ul>
     {% for u in site.urls %}
@@ -6,13 +10,14 @@
     {% endfor %}
     {% assign chaps = site.books | where: 'root', true %}
     {% for bk in chaps %}
-      <li class="nav-item" title="{{ bk.description }}">
-	<a class="about" href="{{ bk.url | relative_url }}">{{ bk.title }}</a></li>
+    <li class="nav-item" title="{{ bk.description }}">
+	<a class="about" href="{{ bk.url | relative_url }}">{{ bk.title }}</a>
+    </li>
     {% endfor %}
   </ul>
 </div>
 
-{% if site.tags and false %}
+  {% if site.tags and false %}
 <div class="sidebar">
   <h2>Tags</h2>
   <ul class="sideBarTags">
@@ -24,4 +29,5 @@
     {% endfor %}
   </ul>
 </div>
+  {% endif %}
 {% endif %}

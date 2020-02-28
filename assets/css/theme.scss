@@ -291,6 +291,7 @@ nav {
   }
   .navbar-nav {
     margin-left: auto;
+    place-items: baseline;
   }
   .navbar.shrink {
     min-height: 15px !important;
@@ -488,3 +489,9 @@ table.inner-borders {
   }
 }
 
+// ************** vsuh ******
+.root-page-link-item { 
+    font-size: larger; 
+    padding: 8px;
+    border-bottom: 1px solid #454545;
+}

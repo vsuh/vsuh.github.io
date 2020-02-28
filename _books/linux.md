@@ -1,6 +1,6 @@
 ---
 book: linux
-title: linux
+title: Линух
 description: linux
 root: true
 ---
