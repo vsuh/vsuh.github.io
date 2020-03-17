@@ -55,7 +55,12 @@ plugins:
 
 jekyll-archives:
   enabled: all
-  layout: page
+  layouts: 
+    day: arch-day
+    month: arch-month
+    year: arch-year
+    category: arch-tagcategory
+    tag: arch-tagcategory
   permalinks:
     year: '/:year/'
     month: '/:year/:month/'

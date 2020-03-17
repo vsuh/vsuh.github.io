@@ -456,7 +456,7 @@ table.inner-borders {
   display: block;
 }
 .filename{
-  background-color: #292929;
+  background-color:$background-color;
   color: lightgrey;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -494,4 +494,9 @@ table.inner-borders {
     font-size: larger; 
     padding: 8px;
     border-bottom: 1px solid #454545;
+}
+
+.small-data {
+    font-size: 50%;
+    color: #777;
 }

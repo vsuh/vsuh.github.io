@@ -9,7 +9,8 @@ root: true
 # {{ page.title }}
 -----
 
+
 |   |  |   |
 |---|--|---|
-|Как публиковать картинки из Google Фото || [lifehacker.ru](https://lifehacker.ru/embed-google-photos)|
+|Как публиковать картинки из Google Фото ||[google](https://ctrlq.org/google/photos/)|
 |Инструмент для тюнинга spotify для windows||[spicetify-cli](https://github.com/khanhas/spicetify-cli)|
