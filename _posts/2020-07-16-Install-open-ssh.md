@@ -22,10 +22,13 @@ title: Установка open-ssh сервера на windows
 
 - Выполняем скрипт установки:
 
+```
 cd "\Program Files\OpenSSH"
 .\install-sshd.ps1
-sshd and ssh-agent services successfully installed 
-sshd and ssh-agent services successfully installed
+```
+
+> sshd and ssh-agent services successfully installed 
+
 Если произошла ошибка политики безопасности, то можно выполнить установку так:
 
 powershell -ExecutionPolicy Bypass -File .\install-sshd.ps1
