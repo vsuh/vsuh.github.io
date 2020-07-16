@@ -77,7 +77,7 @@ New-NetFirewallRule -Protocol TCP -LocalPort 22 -Direction Inbound -Action Allow
 
 ![](https://lh3.googleusercontent.com/GMIFHo3sFqm2LTeu1G0y-sXZzF9-gVoVdrYK0UVSuRFo4M27mrzRD1IEme_7QYpn-B-XA6MTsAukJTQBGXO7vXkgsQsITM-2pPSZDPBsItyaVvsmi7lu1wlUGIhfMN4B4rCTaTk8Ues=w2400)
 
-Эта команда сработает на Windows Server 12 и моложе. На более старых серверах порт можно открыть через GUI в оснастке Windows Firewall with Advanced Security.
+Эта команда сработает на Windows Server 12 и моложе. На более старых серверах порт можно открыть через GUI в оснастке `Windows Firewall with Advanced Security`.
 
 ![](https://lh3.googleusercontent.com/0_lFoBoT53_m4eMkbbndsWMcLLd3Rf0k3tDnTioqJ7SCUcX21TiMkNFzym1SpubOmeeH8ElVXYldHO0jy5CB52mcN044TEImfpQK4S8xvJ9wJ3FdQR3gTzUn5tyKDOtd3BHW8AW1sCA=w2400)
 
