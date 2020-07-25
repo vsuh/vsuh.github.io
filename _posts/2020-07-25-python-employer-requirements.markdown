@@ -1,6 +1,6 @@
 ---
 book: python
-title: 
+title: Требования работодателей к юниору на собеседовании 
 date:  2020-07-25 19:34:56 +0700
 categories: [job, python]
 ---
